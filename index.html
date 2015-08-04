@@ -11,7 +11,9 @@
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.3.1/animate.min.css">
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/3.1.1/jquery.waypoints.min.js"></script>
 	<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fitvids/1.1.0/jquery.fitvids.min.js"></script>
+	<script type="text/javascript" src="jquery.mixitup.min.js"></script>
+	<script type="text/javascript" src="main.js"></script>
 	<link rel="stylesheet" type="text/css" href="style.css">
 
 </head>
@@ -30,8 +32,8 @@
 			  <label>Filter:</label>
 			  
 			  <button class="filter" data-filter="all">All</button>
-			  <button class="filter" data-filter=".category-1">Category 1</button>
-			  <button class="filter active" data-filter=".category-2">Category 2</button>
+			  <button class="filter" data-filter=".category-1">Web Development</button>
+			  <button class="filter active" data-filter=".category-2">Design</button>
 			  
 			  <label>Sort:</label>
 			  
@@ -40,14 +42,10 @@
 			</div>
 			<div class="containermix">
 			  <h3>Web Development</h3>
-			  <div class="mix category-1" data-myorder="1"></div>
-			  <div class="mix category-1" data-myorder="2"></div>
 			  <div class="mix category-1" data-myorder="3"></div>
-			  <div class="mix category-2" data-myorder="4"></div>
-			  <div class="mix category-1" data-myorder="5"></div>
-			  <div class="mix category-1" data-myorder="6"></div>
-			  <div class="mix category-2" data-myorder="7"></div>
-			  <div class="mix category-2" data-myorder="8"></div>
+			  <div class="mix category-1" data-myorder="4"></div>
+			  <div class="mix category-1" data-myorder="7"></div>
+			  <div class="mix category-1" data-myorder="8"></div>
 			  
 			  <div class="gap"></div>
 			  <div class="gap"></div>
@@ -55,12 +53,8 @@
 
 			<div class="containermix">
 			  <h3>Design</h3>
-			  <div class="mix category-1" data-myorder="1"></div>
-			  <div class="mix category-1" data-myorder="2"></div>
-			  <div class="mix category-1" data-myorder="3"></div>
-			  <div class="mix category-2" data-myorder="4"></div>
-			  <div class="mix category-1" data-myorder="5"></div>
-			  <div class="mix category-1" data-myorder="6"></div>
+			  <div class="mix category-2" data-myorder="5"></div>
+			  <div class="mix category-2" data-myorder="6"></div>
 			  <div class="mix category-2" data-myorder="7"></div>
 			  <div class="mix category-2" data-myorder="8"></div>
 			  
@@ -68,14 +62,19 @@
 			  <div class="gap"></div>
 			</div>
 		</div>
+		
+		<div id="video-container">
+			<iframe src="https://www.youtube.com/embed/cp-KRcEpQEM" frameborder="0" allowfullscreen></iframe>
+		</div>
+		
+
 	</div>
 
 	<footer>
 		footer here
 	</footer>
 
-	<script type="text/javascript" src="jquery.mixitup.min.js"></script>
-	<script type="text/javascript" src="main.js"></script>
+
 
 </body>
 </html>
