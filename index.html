@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Carlos Cardozo - Web Portfolio</title>
+
+
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
+	<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.3.1/animate.min.css">
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/3.1.1/jquery.waypoints.min.js"></script>
+	<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+	
+	<header>
+		<div class="container">
+			<img src="http://www.ai.carlos-cardozo.com/images/carloslogo.png" alt=""class="logo">
+		</div>
+	</header>
+
+	<div class="content-wrap container">
+		<h1 class="animated pulse">Web Developer Portfolio</h1>
+		<div class="row gallery">
+			<div class="controls">
+			  <label>Filter:</label>
+			  
+			  <button class="filter" data-filter="all">All</button>
+			  <button class="filter" data-filter=".category-1">Category 1</button>
+			  <button class="filter active" data-filter=".category-2">Category 2</button>
+			  
+			  <label>Sort:</label>
+			  
+			  <button class="sort" data-sort="myorder:asc">Asc</button>
+			  <button class="sort" data-sort="myorder:desc">Desc</button>
+			</div>
+			<div class="containermix">
+			  <h3>Instance 1</h3>
+			  <div class="mix category-1" data-myorder="1"></div>
+			  <div class="mix category-1" data-myorder="2"></div>
+			  <div class="mix category-1" data-myorder="3"></div>
+			  <div class="mix category-2" data-myorder="4"></div>
+			  <div class="mix category-1" data-myorder="5"></div>
+			  <div class="mix category-1" data-myorder="6"></div>
+			  <div class="mix category-2" data-myorder="7"></div>
+			  <div class="mix category-2" data-myorder="8"></div>
+			  
+			  <div class="gap"></div>
+			  <div class="gap"></div>
+			</div>
+
+			<div class="containermix">
+			  <h3>Instance 2</h3>
+			  <div class="mix category-1" data-myorder="1"></div>
+			  <div class="mix category-1" data-myorder="2"></div>
+			  <div class="mix category-1" data-myorder="3"></div>
+			  <div class="mix category-2" data-myorder="4"></div>
+			  <div class="mix category-1" data-myorder="5"></div>
+			  <div class="mix category-1" data-myorder="6"></div>
+			  <div class="mix category-2" data-myorder="7"></div>
+			  <div class="mix category-2" data-myorder="8"></div>
+			  
+			  <div class="gap"></div>
+			  <div class="gap"></div>
+			</div>
+		</div>
+	</div>
+
+	<footer>
+		footer here
+	</footer>
+
+	<script type="text/javascript" src="jquery.mixitup.min.js"></script>
+	<script type="text/javascript" src="main.js"></script>
+
+</body>
+</html>
