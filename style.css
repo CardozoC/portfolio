@@ -150,4 +150,26 @@ button + label{
   }
 }
 
+h1 .fancy_title span {
+	display:inline-block;
+}
 
+.char1, .char3, .char5, .char7, .char9 {
+    color: #10C6CB;
+    transition:all 1s ease-in;
+}
+
+.char1:hover, .char3:hover, .char5:hover, .char7:hover, .char9:hover {
+    color: #10C6CB;
+    transform:rotate(90deg);
+}
+
+.char2, .char4, .char6, .char8, .char10 {
+	color: #B0DB43;
+	transition:all 1s ease-in;
+}
+
+.char2:hover, .char4:hover, .char6:hover, .char8:hover, .char10:hover {
+	color: #B0DB43;
+	transfrom:translate(10px, 20px);
+}
