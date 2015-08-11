@@ -12,3 +12,6 @@ $(document).ready(function() {
 	$(".fancy_title").lettering();
 });
 
+$(document).ready(function() {
+	$("#fittext").fitText();
+});
