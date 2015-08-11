@@ -1,0 +1,15 @@
+bower install bootstrap —save
+git init
+git remote add origin https://github.com/carlou5/gitsample.git
+git remote -v
+git push origin master
+git pull origin master
+git clone https://github.com/carlou5/gitsample.git
+week 5:
+
+git branch testing (make branch called testing)
+git checkout testing (make branch “testing” the default branch)
+touch a.txt (create file called a.txt)
+less a.txt (list text inside of a.txt)
+cat a.txt (list text inside of a.txt)
+echo hello world >> a.txt
