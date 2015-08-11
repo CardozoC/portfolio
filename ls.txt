@@ -1,7 +1,0 @@
-gallery.html
-images
-index.html
-jquery.mixitup.min.js
-main.js
-paste.txt
-style.css

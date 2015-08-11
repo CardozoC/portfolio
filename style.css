@@ -133,7 +133,6 @@ button + label{
 .containermix .mix:before{
   content: '';
   display: inline-block;
-  padding-top: 60%;
 }
 
 @media all and (min-width: 420px){
@@ -172,4 +171,8 @@ h1 .fancy_title span {
 .char2:hover, .char4:hover, .char6:hover, .char8:hover, .char10:hover {
 	color: #B0DB43;
 	transfrom:translate(10px, 20px);
+}
+
+.thumbnail img {
+  width: 100%;
 }
