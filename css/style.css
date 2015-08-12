@@ -1,6 +1,12 @@
+/*---------------------------------------------------
+    LESS Elements 0.9
+  ---------------------------------------------------
+    A set of useful LESS mixins
+    More info at: http://lesselements.com
+  ---------------------------------------------------*/
 body {
   font-family: 'Lato', sans-serif;
-  color: #474a48;
+  color: #0781ff;
 }
 h1,
 h2,
@@ -8,7 +14,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #10c6cb;
+  color: #ff3c3a;
   font-weight: 300;
 }
 .logo {
@@ -21,7 +27,7 @@ h6 {
   height: 100px;
 }
 header {
-  border-bottom: 5px solid #b0db43;
+  border-bottom: 5px solid #3a9bff;
   text-align: center;
   background: #ffffff;
 }
@@ -40,7 +46,7 @@ footer {
 .controls {
   padding: 2%;
   background: #333;
-  color: #ffffff;
+  color: #6db5ff;
 }
 label {
   font-weight: 300;
@@ -51,7 +57,7 @@ button {
   padding: .4em .8em;
   background: #666;
   border: 0;
-  color: #ffffff;
+  color: #6db5ff;
   font-size: 16px;
   font-weight: 300;
   border-radius: 4px;
@@ -70,7 +76,7 @@ button + label {
   padding: 2% 2% 0;
   text-align: justify;
   font-size: 0.1px;
-  background: #000;
+  background: #fff;
   -webkit-backface-visibility: hidden;
 }
 .containermix:after {
@@ -88,6 +94,16 @@ button + label {
   background: #03899c;
   margin-bottom: 2%;
   display: none;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+.containermix .mix:hover {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -o-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
 }
 .containermix .mix.category-1 {
   border-top: 2px solid limegreen;
@@ -97,7 +113,7 @@ button + label {
 }
 .containermix .mix:after {
   content: attr(data-myorder);
-  color: #ffffff;
+  color: #6db5ff;
   font-size: 16px;
   display: inline-block;
   vertical-align: top;
@@ -128,7 +144,7 @@ h1 .fancy_title span {
 .char5,
 .char7,
 .char9 {
-  color: #10c6cb;
+  color: #ff3c3a;
   transition: all 1s ease-in;
 }
 .char1:hover,
@@ -136,7 +152,7 @@ h1 .fancy_title span {
 .char5:hover,
 .char7:hover,
 .char9:hover {
-  color: #10c6cb;
+  color: #ff3c3a;
   transform: rotate(90deg);
 }
 .char2,
@@ -144,7 +160,7 @@ h1 .fancy_title span {
 .char6,
 .char8,
 .char10 {
-  color: #b0db43;
+  color: #3a9bff;
   transition: all 1s ease-in;
 }
 .char2:hover,
@@ -152,7 +168,7 @@ h1 .fancy_title span {
 .char6:hover,
 .char8:hover,
 .char10:hover {
-  color: #b0db43;
+  color: #3a9bff;
   transfrom: translate(10px, 20px);
 }
 .thumbnail img {
@@ -170,10 +186,16 @@ ul.navbar-nav {
   transition: all 0.5s ease;
 }
 .nav.navbar-nav a:hover {
-  border-bottom: 2px solid #b0db43;
+  border-bottom: 2px solid #3a9bff;
 }
 .navbar {
   margin-bottom: 0px;
+  background: #f5f5f5;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #eeeeee), color-stop(1, #10c6cb));
+  background: -ms-linear-gradient(bottom, #eeeeee, #10c6cb);
+  background: -moz-linear-gradient(center bottom, #eeeeee 0%, #10c6cb 100%);
+  background: -o-linear-gradient(#10c6cb, #eeeeee);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#10c6cb', endColorstr='#eeeeee', GradientType=0);
 }
 .containermix .mix::after {
   content: none;
@@ -187,7 +209,7 @@ ul.navbar-nav {
 }
 .containermix .mix.category-1 {
   background: #ffffff;
-  border: 2px solid #b0db43;
+  border: 2px solid #3a9bff;
 }
 .containermix .mix.category-2 {
   background: #ffffff;
@@ -196,37 +218,39 @@ ul.navbar-nav {
 div.about {
   background: url(../images/about-bg.png);
   padding: 80px 0 100px;
-  color: #ffffff;
+  color: #6db5ff;
   background-attachment: fixed;
 }
 div.skills {
   background: url(../images/code.jpg);
   background-size: cover;
   padding: 80px 0 100px;
-  color: #ffffff;
+  color: #6db5ff;
   background-attachment: fixed;
 }
 div.contact {
   background: url(../images/miami.jpg);
   background-size: cover;
   padding: 80px 0 100px;
-  color: #ffffff;
+  color: #6db5ff;
   background-attachment: fixed;
   background-repeat: no-repeat;
 }
 .skills .col-md-3 > p {
   background-color: rgba(0, 0, 0, 0.7);
-  border-radius: 5px;
   min-height: 300px;
   padding: 15px;
   text-align: justify;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
 }
 input,
 textarea {
   background: rgba(0, 0, 0, 0.7);
-  border: 2px solid #b0db43;
+  border: 2px solid #3a9bff;
   box-shadow: none;
-  color: #ffffff;
+  color: #6db5ff;
   padding: 10px !important;
   width: 100%;
   margin: 10px;
@@ -235,4 +259,10 @@ footer {
   padding: 30px;
   text-align: center;
   vertical-align: middle;
+  background: #eeeeee;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #e6e6e6), color-stop(1, #ffffff));
+  background: -ms-linear-gradient(bottom, #e6e6e6 0%, #ffffff 100%);
+  background: -moz-linear-gradient(center bottom, #e6e6e6 0%, #ffffff 100%);
+  background: -o-linear-gradient(#ffffff, #e6e6e6);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#e6e6e6', GradientType=0);
 }
