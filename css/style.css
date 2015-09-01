@@ -275,3 +275,42 @@ footer {
 
 
 
+
+section.videobg video {
+   position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background: url(https://farm9.staticflickr.com/8680/16440696468_f6f91ff3fa_o.jpg) no-repeat;
+    background-size: cover; 
+}
+
+section.videobg h1 {
+  font-size: 4em;
+  color: white;
+  left: 80px;
+  position: absolute;
+  top: 160px;
+  z-index: 99;
+}
+
+section.videobg {
+  font-size: 20px;
+  line-height: 35px;
+  margin: 80px;
+}
+
+section.videobg p {
+  text-align: justify;
+}
+
+
+
+
+
