@@ -24,9 +24,16 @@
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.0/jquery.scrollTo.min.js"></script>
 
 	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/jquery.motio.min.js"></script>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-
+	<style>
+	.panning {
+	    width: auto; 
+	    height: 600px;
+	    background: url('panning.jpg');
+	}
+	</style>
 </head>
 <body data-spy="scroll" data-target="#navbar-example">
 
@@ -299,7 +306,39 @@
     </script>
 
 	</div>
-	
+
+
+
+	<div class="container example">
+		<div id="panning" class="frame panning" >
+			<h1>Panning</h1>
+		</div>
+		<script>
+			var $example = $('.example');
+			var frame = $example.find('.frame')[0];
+			var offset = $example.offset();
+			var motio = new Motio(frame, {
+				fps: 30,
+				bgWidth: 1024,
+				bgHeight: 1024
+			});
+
+			// Play/Pause when mouse enters/leaves the frame
+			$example.on('mouseenter mouseleave', function (event) {
+				if (event.type === 'mouseenter') {
+					motio.play();
+				} else {
+					motio.pause();
+				}
+			});
+
+			// Update the animation speed & direction based on a cursor position
+			$example.on('mousemove', function (event) {
+				motio.set('speedX', event.pageX - offset.left - motio.width / 2);
+				motio.set('speedY', event.pageY - offset.top - motio.height / 2);
+			});
+		</script>
+	</div>
 
 	<footer>
 		All Rights Reserved. Carlos Cardozo, 2015 
